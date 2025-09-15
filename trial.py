@@ -17,7 +17,7 @@ classNames = [
     "sandwich", "orange", "broccoli", "carrot", "hot dog", "pizza", "donut", "cake", "chair",
     "sofa", "pottedplant", "bed", "diningtable", "toilet", "tvmonitor", "laptop", "mouse",
     "remote", "keyboard", "cell phone", "microwave", "oven", "toaster", "sink", "refrigerator",
-    "book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush"
+    "book", "clock", "vase", "scissors", "teddy bear", "hair drier", "toothbrush", "mouse", "earphones"
 ]
 
 # Load Haar Cascade for number plate detection
@@ -30,6 +30,8 @@ if plate_cascade.empty():
 cap = cv2.VideoCapture(0)
 cap.set(3, 1280)
 cap.set(4, 720)
+
+# cap = cv2.VideoCapture(0)
 
 if not cap.isOpened():
     print("❌ Could not open webcam")
